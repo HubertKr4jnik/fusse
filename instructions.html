@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bomb manual</title>
+    <style>
+        @import "tailwindcss/base";
+
+        @import "tailwindcss/components";
+
+        @import "tailwindcss/utilities";
+    </style>
+</head>
+<body class="bg-zinc-900">
+    <main class="min-h-screen bg-slate-200 w-4/5 mx-auto mt-8 rounded border-gray-500 border-4 px-20 text-justify">
+        <div class="w-full flex flex-row place-items-center justify-center gap-4 text-5xl font-bold py-4">
+            <img src="https://counterspell.hackclub.com/favicon.ico" alt="" class="h-full">
+            <h1>Bomb manual</h1>
+            <img src="https://counterspell.hackclub.com/favicon.ico" alt="">
+        </div>
+        <p class="w-full text-center pb-4 text-xl">-- Counterspell --</p>
+        <hr class="w-full h-1 bg-black rounded">
+        <div class="py-2 pb-8">
+            <p class="text-center">The instrunctions below should be considered in top-down order, calculator use is allowed.</p>
+            <h2 class="text-2xl font-bold pb-2">1. Cables:</h2>
+            <div class="grid grid-cols-2 place-items-center">
+                <div>
+                    <p class="text-lg font-bold">If there are 3:</p>
+                    <ul class="list-disc">
+                        <li>If there is a <span class="text-amber-400 font-bold">yellow</span> cable cut the <span class="font-bold">2nd</span></li>
+                        <li>If there is a <span class="text-red-600 font-bold">red</span> cable cut the <span class="font-bold">1st</span></li>
+                        <li>If there is a <span class="font-bold">black</span> cable cut <span class="font-bold">it</span> (there can be multiple)</li>
+                        <li><span class="font-bold">Else</span> cut the <span class="font-bold">3rd</span></li>
+                    </ul>
+                    <p class="text-lg font-bold pt-2">If there are 4:</p>
+                    <ul class="list-disc">
+                        <li>If there is a <span class="text-green-500 font-bold">green</span> cable cut the <span class="font-bold">1st</span></li>
+                        <li>If there is a <span class="font-bold">black</span> cable cut the <span class="font-bold">2nd</span></li>
+                        <li>If there is a <span class="text-sky-700 font-bold">blue</span> cable cut <span class="font-bold">4th</span></li>
+                        <li><span class="font-bold">Else</span> cut the <span class="font-bold">3rd</span></li>
+                    </ul>
+                    <p class="text-lg font-bold pt-2">If there are 5:</p>
+                    <ul class="list-disc">
+                        <li>If there is a <span class="text-red-600 font-bold">red</span> cable cut the <span class="font-bold">1st</span></li>
+                        <li>If there is a <span class="text-green-500 font-bold">green</span> cable cut the <span class="font-bold">2nd</span></li>
+                        <li>If there is a <span class="text-sky-700 font-bold">blue</span> cable cut the <span class="font-bold">3rd</span></li>
+                        <li>If there is a <span class="text-amber-400 font-bold">yellow</span> cable cut <span class="font-bold">4th</span></li>
+                        <li>If there is a <span class="font-bold">black</span> cable cut <span class="font-bold">5th</span></li>
+                    </ul>
+                </div>
+                <img src="/src/assets/cables.jpg" alt=""/>
+            </div>
+            <h2 class="text-2xl font-bold py-2">2. Binary:</h2>
+            <div class="grid grid-cols-2 place-items-center">
+                <div>
+                    <p class="text-lg font-bold">There are 2 rows of lights, which are either lit or unlit</p>
+                    <ul class="list-disc">
+                        <li>The 1st row is a binary representaion of the 1st numer</li>
+                        <li>The 2nd is a binary represantation of the 2nd numer</li>
+                    </ul>
+                    <p class="text-lg font-bold pt-2">
+                        Decode the numers and multiply tchem to get the answer
+                        then press the buton that contains the right value
+                    </p>
+                    <p class="text-lg font-bold pt-2">Decoding a binary numer:</p>
+                    <ul class="list-disc">
+                        <li>Decoding is done from right to left</li>
+                        <li>It is based on adding the corresponding value of 2^x if the light is on</li>
+                    </ul>
+                    <p class="text-lg font-bold pt-2">Example:</p>
+                    <p>
+                        11101 in binary = 1 * 2^0 + 0 * 2^1 + 1 * 2^2 + 1 * 2^3 + 1 * 2^4
+                        So this numer is 29
+                    </p>
+                </div>
+                <img src="/src/assets/binary.jpg" alt=""/>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
