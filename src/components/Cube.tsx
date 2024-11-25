@@ -10,23 +10,25 @@ export default function Cube() {
     const [wrong, setWrong] = useState(0)
     return (
       <>
-      {wrong >= 2 && <img src="src\assets\giphy.gif" alt=""/>}
-      {wrong < 2 && <>
-      <h1 className="pb-6 font-bold text-xl">
-        <p className="text-green-600">Correct: {correct}</p>
-        <p className="text-red-600">Wrong: {wrong}</p>
-      </h1>
-      <div  className="aspect-square h-4/5 bg-white grid grid-cols-3 grid-rows-3 gap-1 p-1 rounded">
-        <Cables value={correct} handleChange={setCorrect} wrong={wrong} handleWrong={setWrong}/>
-        <Empty />
-        <Binary value={correct} handleChange={setCorrect} wrong={wrong} handleWrong={setWrong}/>
-        <Binary value={correct} handleChange={setCorrect} wrong={wrong} handleWrong={setWrong}/>
-        <Display wrong={wrong} handleWrong={setWrong}/>
-        <Cables value={correct} handleChange={setCorrect} wrong={wrong} handleWrong={setWrong}/>
-        <Cables value={correct} handleChange={setCorrect} wrong={wrong} handleWrong={setWrong}/>
-        <Binary value={correct} handleChange={setCorrect} wrong={wrong} handleWrong={setWrong}/>
-        <Shape />
-      </div></>}
+        {wrong >= 2 && <img src="https://hubert-krajnik.hackclub.app/assets/explosion.gif" alt=""/>}
+        {wrong < 2 && <>
+        <h1 className="pb-6 font-bold text-xl">
+          <p className="text-green-600">Correct: {correct}</p>
+          <p className="text-red-600">Wrong: {wrong}</p>
+        </h1>
+        <div  className="aspect-square h-4/5 bg-white grid grid-cols-3 grid-rows-3 gap-1 p-1 rounded">
+          <Cables value={correct} handleChange={setCorrect} wrong={wrong} handleWrong={setWrong}/>
+          <Empty />
+          <Binary value={correct} handleChange={setCorrect} wrong={wrong} handleWrong={setWrong}/>
+          <Binary value={correct} handleChange={setCorrect} wrong={wrong} handleWrong={setWrong}/>
+          <Display wrong={wrong} handleWrong={setWrong}/>
+          <Cables value={correct} handleChange={setCorrect} wrong={wrong} handleWrong={setWrong}/>
+          <Cables value={correct} handleChange={setCorrect} wrong={wrong} handleWrong={setWrong}/>
+          <Binary value={correct} handleChange={setCorrect} wrong={wrong} handleWrong={setWrong}/>
+          <Shape />
+        </div>
+        <a className="text-white underline pt-4" href="https://hubert-krajnik.hackclub.app/fusse/src/instructions.html">Instructions for the 2nd player</a>
+        </>}
       </>
     )
   }

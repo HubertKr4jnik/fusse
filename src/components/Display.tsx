@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 export default function Display(props) {
-    let beep = new Audio("src\\assets\\beep.m4a")
+    let beep = new Audio("https://hubert-krajnik.hackclub.app/assets/beep.m4a")
 
     beep.volume = .1
 
