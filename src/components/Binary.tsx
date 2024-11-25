@@ -106,8 +106,8 @@ export default function Binary(props) {
                 }
             })}
         </div>
-        <input type="button" value={answers[0]} onClick={(e)=>{handleValueInput(e, props)}} className="w-5/6 bg-zinc-800 py-1 border-zinc-900 border-2 text-red-600 rounded cursor-pointer"/>
-        <input type="button" value={answers[1]} onClick={(e)=>{handleValueInput(e, props)}} className="w-5/6 bg-zinc-800 py-1 border-zinc-900 border-2 text-red-600 rounded cursor-pointer"/>
+        <input type="button" value={answers[0]} onClick={(e)=>{handleValueInput(e, props)}} className="w-5/6 bg-zinc-800 py-1 border-zinc-900 border-2 text-red-700 rounded text-center cursor-pointer transition-all hover:text-red-600"/>
+        <input type="button" value={answers[1]} onClick={(e)=>{handleValueInput(e, props)}} className="w-5/6 bg-zinc-800 py-1 border-zinc-900 border-2 text-red-700 rounded text-center cursor-pointer transition-all hover:text-red-600"/>
       </div>
     )
   }

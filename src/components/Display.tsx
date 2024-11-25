@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 export default function Display(props) {
     let beep = new Audio("https://hubert-krajnik.hackclub.app/assets/beep.m4a")
 
-    beep.volume = .1
+    beep.volume = .75
 
     beep.play()
 
@@ -27,15 +27,20 @@ export default function Display(props) {
     }
   
     useEffect(() => {
-      // use set timeout and be confident because updateTime will cause rerender
-      // rerender mean re call this effect => then it will be similar to how setinterval works
-      // but with easy to understand logic
-      const token = setTimeout(updateTime, 1000)
+      let delay = 1000
+
+      if (props.wrong == 1) {
+        delay = 500
+      }
+      if (props.wrong == 2) {
+        delay = 333
+      }
+      const token = setTimeout(updateTime, delay)
   
         if (minutes == 0 && seconds == 0) {
             clearTimeout(token);
             beep.pause()
-            props.handleWrong(2)
+            props.handleWrong(3)
             // window.location.reload()
         }
 
