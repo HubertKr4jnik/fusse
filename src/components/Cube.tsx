@@ -10,7 +10,7 @@ export default function Cube() {
     const [wrong, setWrong] = useState(0)
     return (
       <>
-      {wrong >= 2 && <img src="/src/assets/giphy.gif" alt=""/>}
+      {wrong >= 2 && <img src="src\assets\giphy.gif" alt=""/>}
       {wrong < 2 && <>
       <h1 className="pb-6 font-bold text-xl">
         <p className="text-green-600">Correct: {correct}</p>
