@@ -1,55 +1,49 @@
-# 2 player  defusal game
+<a id="readme-top"></a>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
-Currently, two official plugins are available:
+<br />
+  <h2 align="center">Fusse - 2 player defusal game</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  <p align="center">
+    Inspired by "Keep talking and nobody dies" and Roblox "Defusal".
+    <br />
+</div>
 
-## Expanding the ESLint configuration
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+This game is made for 2 people - one reads the instructions and the other defuses the bomb. So grab a friend and get defusing!
+## Built With
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+* ![Static Badge](https://img.shields.io/badge/HTML-%23E34F26?style=for-the-badge&logo=html5&labelColor=white)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+* ![Static Badge](https://img.shields.io/badge/CSS-%231572B6?style=for-the-badge&logo=css3&logoColor=%231572B6&labelColor=white)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+* ![Static Badge](https://img.shields.io/badge/tailwindcss-%2306B6D4?style=for-the-badge&logo=tailwindcss&logoColor=%2306B6D4&labelColor=white)
 
-## Made with:
-* React, 
-* TypeScript
-* Vite
+* ![Static Badge](https://img.shields.io/badge/JavaScript-%23F7DF1E?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E&labelColor=white)
+
+* ![Static Badge](https://img.shields.io/badge/TypeScript-%233178C6?style=for-the-badge&logo=typescript&logoColor=%233178C6&labelColor=white)
+
+* ![Static Badge](https://img.shields.io/badge/react-%2361DAFB?style=for-the-badge&logo=react&logoColor=%2361DAFB&labelColor=white)
+
+* ![Static Badge](https://img.shields.io/badge/vite-%23646CFF?style=for-the-badge&logo=vite&logoColor=%23646CFF&labelColor=white)
+
+## Live demo
+
+The game is avalible to play under this url: <a href="https://fusse.vercel.app/">https://fusse.vercel.app/</a>
+<hr/>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[stars-shield]: https://img.shields.io/github/stars/HubertKr4jnik/fusse?style=for-the-badge
+[stars-url]: https://github.com/HubertKr4jnik/fusse/stargazers
+[issues-shield]: https://img.shields.io/github/issues/HubertKr4jnik/fusse?style=for-the-badge
+[issues-url]: https://github.com/HubertKr4jnik/fusse/issues
+[license-shield]: https://img.shields.io/github/license/HubertKr4jnik/fusse?style=for-the-badge
+[license-url]: https://img.shields.io/github/HubertKr4jnik/fusse/LICENSE.txt
