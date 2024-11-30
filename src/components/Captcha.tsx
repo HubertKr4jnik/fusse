@@ -15,7 +15,7 @@ export default function Captcha(props) {
     }, [props.wrong, props.value])
 
     const handleCaptchaSubmit = (e)=>{
-        if (e.target.parentElement.style.borderColor != "lightgreen" && e.target.parentElement.style.borderColor != "lightgreen") {
+        if (e.target.parentElement.style.borderColor != "red" && e.target.parentElement.style.borderColor != "lightgreen") {
             if (inputVal === randomCharacters) {
                 props.handleChange((value) => value + 1)
                 e.target.parentElement.style.borderColor = "lightgreen"
@@ -30,7 +30,7 @@ export default function Captcha(props) {
     return (
       <div className="w-full h-full bg-slate-500 flex flex-col place-items-center justify-evenly px-6 border-8 border-slate-800 module">
         <p className="w-5/6 bg-zinc-800 py-1 border-zinc-900 border-2 text-red-600 rounded text-center select-none">
-            <span className="animate-pulse">
+            <span className="animate-ping">
                 {randomCharacters}
             </span>
         </p>

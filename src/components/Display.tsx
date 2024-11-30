@@ -44,6 +44,12 @@ export default function Display(props) {
             // window.location.reload()
         }
 
+        if (props.wrong + props.correct == 8) {
+          clearTimeout(token);
+          beep.pause()
+          // window.location.reload()
+      }
+
         return () => {
             if(token !== null) clearTimeout(token);
         }

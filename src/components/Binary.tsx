@@ -89,20 +89,20 @@ export default function Binary(props) {
         <div className="flex w-full flex-row place-items-center justify-between">
             {binary1.map(dot =>{
                 if (dot.value == 1) {
-                    return <span className="bg-white rounded-full h-4 w-4 border-zinc-900 border-2" key={dot.key}></span>
+                    return <span className="bg-white rounded-full h-4 w-4 border-zinc-900 border-2 animate-pulse" key={dot.key}></span>
                 }
                 else{
-                    return <span className="bg-gray-600 rounded-full h-4 w-4 border-zinc-900 border-2" key={dot.key}></span>
+                    return <span className="bg-gray-600 rounded-full h-4 w-4 border-zinc-900 border-2 animate-pulse" key={dot.key}></span>
                 }
             })}
         </div>
         <div className="flex w-full flex-row place-items-center justify-between">
             {binary2.map(dot =>{
                 if (dot.value == 1) {
-                    return <span className="bg-white rounded-full h-4 w-4 border-zinc-900 border-2" key={dot.key}></span>
+                    return <span className="bg-white rounded-full h-4 w-4 border-zinc-900 border-2 animate-pulse" key={dot.key}></span>
                 }
                 else{
-                    return <span className="bg-gray-600 rounded-full h-4 w-4 border-zinc-900 border-2" key={dot.key}></span>
+                    return <span className="bg-gray-600 rounded-full h-4 w-4 border-zinc-900 border-2 animate-pulse" key={dot.key}></span>
                 }
             })}
         </div>
