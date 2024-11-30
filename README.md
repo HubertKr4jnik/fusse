@@ -15,7 +15,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-
+![project image](https://github.com/user-attachments/assets/25a4037b-44b0-416b-8a6a-050c5fd1d0b3)
 
 This game is made for 2 people - one reads the instructions and the other defuses the bomb. So grab a friend and get defusing!
 ## Built With
